@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button {
+    font-family: Montserrat Alternates;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.black-button {
+    box-shadow: 7px 7px #00000025;
+    border-radius: 8px;
+    @apply bg-BlackColor text-Champagne px-5 py-3 transition-all duration-300;
+}
+
+.black-button:hover {
+    box-shadow: 0px 0px #00000025;
+    @apply bg-Champagne text-BlackColor px-5 py-3 transition-all duration-300;
+}
+
+.black-button:active {
+    transition: all 1ms ease-in-out;
+    background-color: #81adc8;
+    box-shadow: 0px 0px 30px #81adc8;
+}
+
+.btnSecondary {
+    border-radius: 8px;
+    border: 2px solid #000000;
+    @apply px-5 py-3 transition-all duration-300;
+}
+
+.btnSecondary:hover {
+    box-shadow: 0px 0px 20px #000000;
+    @apply bg-black text-AliceBlue px-5 py-3 transition-all duration-300;
+}
+
+.btnSecondary:active {
+    transition: all 1ms ease-in-out;
+    background-color: #81adc8;
+    box-shadow: 0px 0px 30px #81adc8;
+}

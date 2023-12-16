@@ -1,245 +1,67 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Cardo;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-    text-align: left;
+body {
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 59.3px;
+    line-height: 120%;
+    letter-spacing: -2%;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 36.65px;
+    line-height: 100%;
+    /* line-height: 140%;  */
+    letter-spacing: -2%;
+}
+
+h3 {
+    font-weight: Medium;
+    font-size: 22.65px;
+    line-height: 140%;
+    /* line-height: 140%;  */
+    letter-spacing: 0%;
+}
+
+.h3 {
+    font-weight: bold;
+    font-size: 22.65px;
+    line-height: 160%;
+    /* line-height: 140%;  */
+    letter-spacing: -2%;
 }
 
 p {
-    font-family: Inter;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 34px;
-    letter-spacing: -0.01em;
-    color: #969aa0;
-}
-
-.heading {
-    background: #1b3764;
-    color: azure;
+    line-height: 160%;
 }
 
 .links {
-    font-family:
-        "Inter",
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Oxygen,
-        Ubuntu,
-        Cantarell,
-        "Open Sans",
-        "Helvetica Neue",
-        sans-serif;
-    font-weight: 500;
     transition: all 0.3s ease-in;
 }
 
 .links:hover {
-    color: #ffca42;
-    text-shadow: 0px 0px 15px #ffca42;
-    transition: all 0.2s ease-out;
+    color: #81adc8;
+    text-shadow: 0px 0px 20px #81adc8;
+    transition: all 0.3s ease-out;
 }
 
-.links:active {
-    color: #ffca42;
-    font-size: small;
-    transition: all 0.1ms ease;
+.header {
+    background-image: url(/assets/img/HeroShapeSwirl.svg), url(/assets/img/Star.svg);
+    background-repeat: no-repeat;
+    background-position:
+        left bottom,
+        right bottom;
 }
 
-.textWelcoming {
-    font-family: Cardo;
-    font-size: 24px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 37px;
-    letter-spacing: -0.02em;
-    text-align: left;
-}
-
-.textWelcome {
-    font-family: Cardo;
-    font-size: 65px;
+.titleHero {
+    font-family: Montserrat Alternates;
+    font-size: 96px;
     font-weight: 700;
-    line-height: 72px;
-    letter-spacing: -0.02em;
-    text-align: left;
-}
-
-.link-button {
-    font-family: Cardo;
-    font-size: 19px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0.02em;
+    line-height: 96px;
+    letter-spacing: -0.04em;
     text-align: center;
-    transition: all 0.3s ease;
-}
-
-.link-button:hover {
-    border-bottom: 3px solid #ffffff;
-}
-
-.label1 {
-    font-family: Cardo;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: -0.01em;
-    text-align: left;
-}
-
-.title {
-    color: #1b3764;
-    font-family: Cardo;
-    font-size: 45px;
-    font-weight: 700;
-}
-
-.Name {
-    font-family: Cardo;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 26px;
-    letter-spacing: -0.02em;
-    text-align: left;
-    color: #ffca42;
-}
-
-.title1 {
-    font-family: Cardo;
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 54px;
-    letter-spacing: -0.02em;
-    text-align: left;
-}
-
-.button12 {
-    font-family: "Cardo";
-    font-weight: 700;
-}
-
-.button12:hover {
-    box-shadow: 0px 0px 20px #ffca42;
-    border-radius: 20px;
-}
-
-.cadre {
-    width: 290px;
-    background: #f4f8ff;
-    padding: 41px 33px 41px 33px;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.number {
-    font-family: Cardo;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: -0.01em;
-    text-align: center;
-}
-
-.description {
-    color: #1b3764;
-    font-family: Cardo;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 34px;
-    letter-spacing: -0.01em;
-    text-align: left;
-}
-
-.padding1 {
-    padding: 121px 230px 121px 230px;
-}
-
-.input {
-    border: 2px solid transparent;
-    width: 529px;
-    height: 65px;
-    padding-left: 0.8em;
-    outline: none;
-    overflow: hidden;
-    background-color: #f3f3f3;
-    transition: all 0.5s;
-}
-
-.input:focus {
-    border: 2px solid #4a9dec;
-    box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
-    background-color: white;
-}
-
-.subscribe {
-    height: 65px;
-    padding: 20px 103px 20px 103px;
-}
-
-.subscribe:hover {
-    background: #ffffff;
-    box-shadow: 0px 0px 50px #1b3764;
-}
-
-.subscribe:active {
-    background: #ffffff;
-    box-shadow: 0px 0px 20px #1b3764;
-    transition-duration: 1ms;
-}
-
-.copyright {
-    font-family: Inter;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 34px;
-    letter-spacing: -0.01em;
-}
-
-.highlight {
-    color: #ffffff;
-    font-family: Inter;
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 34px;
-    letter-spacing: -0.01em;
-}
-
-.title-footer {
-    color: #ffffff;
-    font-family: Cardo;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: -0.02em;
-    text-align: left;
-    margin-bottom: 23px;
-}
-
-.links-footer {
-    color: #b4c7e7;
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 37px;
-    letter-spacing: -0.01em;
-    transition: all 0.3s ease-in;
-}
-
-.links-footer:hover {
-    color: #ffca42;
-    text-shadow: 0px 0px 15px #ffca42;
-    transition: all 0.2s ease-out;
 }

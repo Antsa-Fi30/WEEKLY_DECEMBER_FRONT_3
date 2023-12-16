@@ -5,18 +5,64 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>Spotify</title>
-    <link
-      rel="stylesheet"
-      href="dist/output.css" />
+    <title>Pod Of Casts</title>
     <link
       rel="stylesheet"
       href="css/anotherStyles.css" />
+    <link
+      rel="stylesheet"
+      href="dist/output.css" />
   </head>
+
   <body>
-    <header>
-      <div></div>
+    <header class="header">
+      <nav class="container relative mx-auto">
+        <div class="flex flex-row items-center justify-between p-6">
+          <div>
+            <img
+              src="assets/ico/logo.svg"
+              alt=""
+              width="54"
+              height="54" />
+          </div>
+          <div class="hidden lg:flex flex-row space-x-6">
+            <a
+              class="font-display links"
+              href=""
+              >Episodes</a
+            >
+            <a
+              class="font-display links"
+              href=""
+              >About</a
+            >
+            <a
+              class="font-display links"
+              href=""
+              >More</a
+            >
+          </div>
+          <div class="hidden lg:flex flex-row space-x-6">
+            <button class="btnSecondary">Recent Episodes</button>
+            <button class="black-button">Subscribe</button>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="container flex flex-col space-y-10 my-11 mx-auto justify-center content-center text-center">
+        <div class="mx-auto w-[512px] h-[192px]">
+          <span class="font-display titleHero"
+            >Your Daily <span class="text-Vermillion">Podcast</span></span
+          >
+        </div>
+        <div class="w-[374px] mx-auto">
+          <p>We cover all kinds of categories and a weekly special guest.</p>
+        </div>
+        <button class="black-button text-center w-[184px] h-[65px] mx-auto">
+          Subscribe
+        </button>
+      </div>
     </header>
+    <section></section>
   </body>
-  s
 </html>
