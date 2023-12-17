@@ -4,41 +4,6 @@ body {
     font-family: "Montserrat Alternates", sans-serif;
 }
 
-h1 {
-    font-weight: bold;
-    font-size: 59.3px;
-    line-height: 120%;
-    letter-spacing: -2%;
-}
-
-h2 {
-    font-weight: bold;
-    font-size: 36.65px;
-    line-height: 100%;
-    /* line-height: 140%;  */
-    letter-spacing: -2%;
-}
-
-h3 {
-    font-weight: Medium;
-    font-size: 22.65px;
-    line-height: 140%;
-    /* line-height: 140%;  */
-    letter-spacing: 0%;
-}
-
-.h3 {
-    font-weight: bold;
-    font-size: 22.65px;
-    line-height: 160%;
-    /* line-height: 140%;  */
-    letter-spacing: -2%;
-}
-
-p {
-    line-height: 160%;
-}
-
 .links {
     transition: all 0.3s ease-in;
 }
@@ -49,12 +14,86 @@ p {
     transition: all 0.3s ease-out;
 }
 
+.linksRes {
+    transition: all 0.3s ease-in;
+}
+
+.linksRes:hover {
+    border: 1px solid #81adc8;
+    color: #81adc8;
+    border-radius: 14px;
+    box-shadow: 0px 0px 20px #81adc8;
+    transition: all 0.3s ease-out;
+}
+
+.linksRes:active {
+    background: #81adc8;
+    color: #f7ede8;
+
+    transition: all 1ms ease-out;
+}
+
 .header {
     background-image: url(/assets/img/HeroShapeSwirl.svg), url(/assets/img/Star.svg);
     background-repeat: no-repeat;
     background-position:
         left bottom,
         right bottom;
+}
+
+@media (max-width: 980px) {
+    .header {
+        background-size: 80px;
+    }
+}
+
+/* Hamburger Button */
+/* Hamburger Menu */
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-mid,
+.hamburger-bott {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-mid {
+    transform: translateY(7px);
+}
+
+.hamburger-bott {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-mid {
+    display: none;
+}
+
+.open .hamburger-bott {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
 .titleHero {
@@ -64,4 +103,149 @@ p {
     line-height: 96px;
     letter-spacing: -0.04em;
     text-align: center;
+}
+
+.vitreMorphism {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Carouse&Card's styles */
+
+/* CAROUSEL */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+.carousel_container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.carousel_container:not(.animating) .carousel_item:nth-child(1) {
+    transform: translateX(0) rotateY(0);
+}
+
+.carousel_container:not(.animating) .carousel_item:nth-child(2) {
+    transform: translateX(100%) rotateY(-90deg);
+}
+
+.carousel_container:not(.animating) .carousel_item:nth-child(3) {
+    transform: translateX(200%) rotateY(-180deg);
+}
+
+.carousel_item {
+    float: left;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.container_carousel {
+    height: auto;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Card */
+.card {
+    width: 373px;
+    height: 373px;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    animation: name-of-animation 2s;
+}
+
+.card-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.platform {
+    padding: 20px 73px 20px 73px;
+}
+
+.arrow-svg {
+    position: absolute;
+    bottom: -890px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 120px;
+    width: 120px;
+    fill: #000;
+}
+
+.arrow-svg1 {
+    position: absolute;
+    bottom: -3150px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 120px;
+    width: 120px;
+    fill: #000;
+}
+
+.title {
+    font-size: 59px;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.h2Styles {
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.paragraph {
+    width: 472px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.quotes {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 96px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.svg-epingle1 {
+    position: absolute;
+    top: 0px;
+    right: 0%;
+    transform: translateX(-50%);
+    height: 120px;
+    width: 120px;
+    fill: #000;
+}
+
+/* Observer Intersection system's CSS */
+section {
+    transform: translateX(0);
+    opacity: 1;
+    transition:
+        transform 0.4s,
+        opacity 0.4s;
+}
+
+section.not-visible {
+    transform: translateX(50px);
+    opacity: 0;
 }

@@ -15,17 +15,51 @@
   </head>
 
   <body>
-    <header class="header">
-      <nav class="container relative mx-auto">
-        <div class="flex flex-row items-center justify-between p-6">
-          <div>
-            <img
-              src="assets/ico/logo.svg"
-              alt=""
-              width="54"
-              height="54" />
+    <header class="bg-Champagne">
+      <div class="header">
+        <nav class="container relative mx-auto">
+          <div class="flex flex-row items-center justify-between p-6">
+            <div>
+              <img
+                src="assets/ico/logo.svg"
+                alt=""
+                width="54"
+                height="54" />
+            </div>
+            <div class="hidden lg:flex flex-row space-x-6">
+              <a
+                class="font-display links"
+                href=""
+                >Episodes</a
+              >
+              <a
+                class="font-display links"
+                href=""
+                >About</a
+              >
+              <a
+                class="font-display links"
+                href=""
+                >More</a
+              >
+            </div>
+            <div class="hidden lg:flex flex-row space-x-6">
+              <button class="btnSecondary">Recent Episodes</button>
+              <button class="black-button">Subscribe</button>
+            </div>
+
+            <button
+              id="menu-btn"
+              class="block hamburger lg:hidden focus:outline-none">
+              <span class="hamburger-top"></span>
+              <span class="hamburger-mid"></span>
+              <span class="hamburger-bott"></span>
+            </button>
           </div>
-          <div class="hidden lg:flex flex-row space-x-6">
+          <!-- Menu -->
+          <div
+            id="menu"
+            class="hidden flex-col bg-white text-body p-5 text-center justify-center items-center space-y-6 transition-all duration-300 lg:hidden lg:flex-col">
             <a
               class="font-display links"
               href=""
@@ -41,28 +75,176 @@
               href=""
               >More</a
             >
-          </div>
-          <div class="hidden lg:flex flex-row space-x-6">
             <button class="btnSecondary">Recent Episodes</button>
             <button class="black-button">Subscribe</button>
           </div>
+        </nav>
+
+        <div
+          class="lg:vitreMorphism lg:container flex flex-col space-y-10 my-11 mx-auto justify-center content-center text-center">
+          <div class="mx-auto w-[512px] h-[192px]">
+            <span class="font-display titleHero"
+              >Your Daily <span class="text-Vermillion">Podcast</span></span
+            >
+          </div>
+          <div class="w-[374px] mx-auto">
+            <p>We cover all kinds of categories and a weekly special guest.</p>
+          </div>
+          <button class="black-button text-center w-[184px] h-[65px] mx-auto">
+            Subscribe
+          </button>
         </div>
-      </nav>
-      <div
-        class="container flex flex-col space-y-10 my-11 mx-auto justify-center content-center text-center">
-        <div class="mx-auto w-[512px] h-[192px]">
-          <span class="font-display titleHero"
-            >Your Daily <span class="text-Vermillion">Podcast</span></span
-          >
-        </div>
-        <div class="w-[374px] mx-auto">
-          <p>We cover all kinds of categories and a weekly special guest.</p>
-        </div>
-        <button class="black-button text-center w-[184px] h-[65px] mx-auto">
-          Subscribe
-        </button>
       </div>
+
+      <section
+        id="header"
+        class="w-screen p-3 mt-20">
+        <div id="carousel1">
+          <div class="card active1">
+            <div class="card-img">
+              <img
+                src="assets/img/cover-1.png"
+                alt="Perplexed mind" />
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="assets/img/cover-2.png"
+                alt="Image exemple ici" />
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="assets/img/cover-3.png"
+                alt="Image exemple ici" />
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="assets/img/cover-4.png"
+                alt="Image exemple ici" />
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="assets/img/cover-5.png"
+                alt="Image exemple ici" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="mx-auto my-32 py-11 flex flex-row items-center text-center space-x-10 border-y border-[#ddd]">
+          <h3 class="font-display">Supported By:</h3>
+          <div class="flex flex-row items-center ml-24">
+            <a
+              href="http://spotify.com"
+              class="platform">
+              <img
+                src="assets/ico/Spotify.svg"
+                alt="" />
+            </a>
+            <a
+              class="platform"
+              href="http://podcasts.google.com">
+              <img
+                src="assets/ico/Google Podcast.svg"
+                alt="" />
+            </a>
+            <a
+              class="platform"
+              href="http://www.youtube.com">
+              <img
+                src="assets/ico/Youtube.svg"
+                alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
     </header>
-    <section></section>
+    <img
+      class="arrow-svg"
+      src="assets/ico/Scribble.svg"
+      alt="" />
+
+    <section class="my-52">
+      <div class="container relative mx-auto">
+        <h1 class="title">Talk. Listen. Get inspired by every minute of it.</h1>
+        <div class="flex flex-col mt-28 lg:flex-row lg:justify-between">
+          <div class="flex flex-col space-y-5 items-center">
+            <img
+              src="assets/ico/Illustration 01.png"
+              alt="" />
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              ac ultrices odio.
+            </p>
+          </div>
+          <div class="flex flex-col space-y-5 items-center">
+            <img
+              src="assets/ico/Illustration 02.svg"
+              width="275px"
+              alt="" />
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              ac ultrices odio.
+            </p>
+          </div>
+        </div>
+        <div class="mt-36"></div>
+      </div>
+    </section>
+
+    <section class="my-52">
+      <div class="container w-screen mx-auto">
+        <div class="mx-auto w-[1060px] bg-Champagne">
+          <div
+            class="flex flex-col items-center space-y-6 justify-center text-center p-16">
+            <div>
+              <span class="quotes text-Vermillion">“</span>
+            </div>
+            <div>
+              <h2 class="h2Styles w-[960px]">
+                One of the best daily podcasts that covers every topic on
+                Spotify.
+              </h2>
+            </div>
+            <div class="flex flex-row items-center">
+              <div class="flex flex-row items-center">
+                <img
+                  src="assets/img/avatar.png"
+                  alt="" />
+                <p class="font-caption-medium">John Smith,</p>
+              </div>
+              <img
+                class="mx-[2px]"
+                src="assets/ico/platform.svg"
+                alt="" />
+            </div>
+          </div>
+          <img
+            class="svg-epingle1"
+            src="assets/ico/Star 4.svg"
+            alt="" />
+          <img
+            class="svg-epingle2"
+            src="assets/ico/Vector 4.svg"
+            alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="my-52"></section>
   </body>
+  <script src="js/Sidebar.js"></script>
+  <script src="js/Carousel.js"></script>
+  <script src="js/IntersectionObserver.js"></script>
+  <script src="js/IOPolyfills.js"></script>
 </html>
